@@ -1,0 +1,240 @@
+/**
+
+	EBLSL
+
+
+ */
+
+:root{
+	--red: #e91b23;
+	--dark-red: #B2151B;
+	--para: 'Poppins', sans-serif;
+	--head: 'Open Sans', sans-serif;
+}
+
+
+.bg-red{
+	background: var(--red);
+}
+
+.bg-lgreen{
+	background: var(--light-green);
+}
+
+.bg-green{
+	background: var(--green);
+}
+
+.bg-dark{
+	background: var(--dark);
+}
+
+/*=====================================
+=            universal css            =
+=====================================*/
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	overflow-x: hidden;
+	font-family: var(--para);
+	position: relative;
+}
+
+a, a:hover, a:focus {
+	text-decoration: none;
+	color: unset;
+}
+
+h1, h2, h3,h4, h5, h6{
+	font-family: var(--head);
+	font-weight: 700;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+button:focus {
+     outline: none;
+}
+
+dl, ol, ul {
+     margin-bottom: 0; 
+}
+p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+hr{
+	margin: 0;
+}
+
+.form-control:focus {
+    border-color: #a7ce71;
+    box-shadow: 0 0 0 0.2rem #a7ce717a;
+}
+
+.pt15{
+	padding-top: 15px;
+}
+.pt30{
+	padding-top: 30px;
+}
+.pt60{
+	padding-top: 60px;
+}
+.pb15{
+	padding-bottom: 15px;
+}
+.pb30{
+	padding-bottom: 30px;
+}
+.pb60{
+	padding-bottom: 60px;
+}
+.ptb15{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.ptb30{
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+.ptb60{
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+.mt15{
+	margin-top: 15px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt60{
+	margin-top: 60px;
+}
+.mb15{
+	margin-bottom: 15px;
+}
+.mb30{
+	margin-bottom: 30px;
+}
+.mb60{
+	margin-bottom: 60px;
+}
+.mtb15{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+.mtb30{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.mtb60{
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #0e713a;
+    border-color: #0e713a;
+}
+.btn-primary.focus, .btn-primary:focus {
+	color: #fff;
+	background-color: #0e713a;
+	border-color: var(--green);
+	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+}
+.btn-primary:not(:disabled):not(.disabled):active{
+	color: #fff;
+	background-color: #0e713a;
+	border-color: var(--green);
+	box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus{
+    box-shadow: 0 0 0 0.2rem rgb(22 116 57 / 50%);
+}
+/*.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: var(--yellow);
+}*/
+
+/*=====  End of universal css  ======*/
+
+/*==============================
+=            header            =
+==============================*/
+.logo{
+	width: 100%;
+	max-width: 128px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+	    padding-right: 0.7rem;
+	    padding-left: 0.7rem;
+	}
+
+.navbar-light .navbar-nav .active>.nav-link{
+	color: rgb(255 255 255 / 90%);
+    background: var(--red);
+    border-radius: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255);
+    background: var(--red);
+    border-radius: 5px;
+}
+
+.dropdown-item:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: var(--red);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+/*=====  End of header  ======*/
+
+
+/*==============================
+=            banner            =
+==============================*/
+
+.platinum-vid{
+	position: relative;
+	height: 100vh;
+	margin-top: -60px;
+}
+
+.platinum-vid video{
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+
+/*=====  End of banner  ======*/
+
+
+/*==============================
+=            footer            =
+==============================*/
+
+
+/*=====  End of footer  ======*/
+
+

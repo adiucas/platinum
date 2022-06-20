@@ -1,0 +1,20 @@
+/*header*/
+
+
+@media (min-width: 992px) {
+	.navbar .nav-item a+.dropdown-menu{ margin-top:0; }
+}
+
+@media (max-width: 992px){
+	.navbar .dropdown-submenu .dropdown-menu {
+		bottom: auto;
+		margin-top: calc(0.1rem - 1px);
+		border: none;
+		background: rgb(233 27 35 / 10%);
+		border-radius: 0;
+	}
+
+	.dropdown-submenu .dropdown-menu .dropdown-item{
+		padding-left: 40px;
+	}
+}
