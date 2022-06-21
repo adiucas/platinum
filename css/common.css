@@ -226,6 +226,23 @@ hr{
 	bottom: 0;
 }
 
+.query-wrapper{
+	position: absolute;
+	bottom: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.query-wrapper h4{
+	color: #ffffff;
+}
+
+.q-card{
+	background: var(--red);
+	padding: 15px;
+	margin-top: 10px;
+	border-radius: 5px;
+}
 
 /*=====  End of banner  ======*/
 
