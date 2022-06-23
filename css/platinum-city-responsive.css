@@ -1,0 +1,38 @@
+@media (max-width: 992px){
+	.platinum-vid {
+	    position: relative;
+	    margin-top: 0;
+	    overflow: hidden;
+	    height: 80vh;
+	}
+	.platinum-vid video {
+	     width: unset; 
+	    position: absolute;
+	    height: 80vh;
+	    bottom: unset;
+	    left: 50%;
+	    transform: translateX(-50%);
+	}
+	.q-card .btn-primary {
+		width: unset;
+	}
+	.query-wrapper {
+	    bottom: 25%;
+	}
+}
+
+@media (min-width: 992px){
+	.milestones .col-lg-2 {
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
+	}
+}
+
+
+
+@media (max-width: 768px){
+	.plot-img-wrapper img{
+		height: unset;
+	}
+}

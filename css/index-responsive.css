@@ -1,105 +1,38 @@
-@media (max-width: 768px){
-	.research .title-tag {
-	     position: unset; 
-	     top: unset; 
-	     transform: unset; 
+@media (max-width: 992px){
+	.platinum-vid {
+	    position: relative;
+	    margin-top: 0;
+	    overflow: hidden;
+	    height: 80vh;
 	}
-	.rnd-cards, .rnd-cards img {
-	     height: unset; 
+	.platinum-vid video {
+	     width: unset; 
+	    position: absolute;
+	    height: 80vh;
+	    bottom: unset;
+	    left: 50%;
+	    transform: translateX(-50%);
 	}
-	.rnd-cards{
-		margin: 15px 0;
+	.q-card .btn-primary {
+		width: unset;
 	}
-	.connect-with-us{
-		display: flex;
-		justify-content: center;
-	}
-	.connect-with-us .box {
-	    top: 0;
-	    left: unset;
-	    transform: scale(0.6) translateY(-34%);
-	}
-	.cwu-data{
-		margin-top: unset;
-		margin-left: unset;
-	}
-	.connect-with-us .left {
-	    background-size: cover;
-	    min-height: 200px;
-	}
-	.nav {
-	    justify-content: center;
-	}
-	.data-scroller{
-		font-size: 12px;
-	}
-	.dis-card:not(:last-child){
-		margin-bottom: 15px;
-	}
-	.research .title-tag {
-	    align-items: center;
-	    margin-bottom: 15px;
-	    text-align: center;
-	}
-	.title-tag h1{
-		color: #ffffff;
-	}
-	.research{
-		background: var(--yellow);
-	}
-	.floating-menu-left, .floating-menu-right{
-		display: none !important;
-	}
-}
-
-@media (max-width: 1200px){
-	#eblslHome .nav-link{
-		font-size: 14px;
-		font-weight: bold;
-	}
-}
-@media (min-width: 1200px){
-
-}
-@media (min-width: 1920px){
-	#mainBanner .carousel-item img{
-		max-width: 100%
+	.query-wrapper {
+	    bottom: 25%;
 	}
 }
 
 @media (min-width: 992px){
-	.os-section .col-lg-3{
-		flex: 0 0 14.28571%;
-		max-width: 14.28571%;
+	.milestones .col-lg-2 {
+	    -ms-flex: 0 0 20%;
+	    flex: 0 0 20%;
+	    max-width: 20%;
 	}
 }
 
-@media (max-width: 992px){
-	/*award*/
-	#Award .carousel-inner {
-	     height: unset; 
-	}
-	#Award .carousel-item {
-	     padding-left: unset; 
-	     flex-direction: column;
-	}
-	#Award img {
-		height: unset; 
-		position: unset; 
-		right: 0; 
-		top: unset; 
-		margin-top: -180px;
-	}
-	#Award .carousel-caption {
-	    margin-top: -105px;
-	    margin-bottom: 35px;
-	    text-align: center;
-	}
-}
 
-@media (min-width: 992px) and (max-width: 1200px){
-	/*award*/
-	#Award img{
-	    right: -5%;
+
+@media (max-width: 768px){
+	.plot-img-wrapper img{
+		height: unset;
 	}
 }

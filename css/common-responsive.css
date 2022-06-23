@@ -1,8 +1,5 @@
-/*header*/
-
-
 @media (min-width: 992px) {
-	.navbar .nav-item a+.dropdown-menu{ margin-top:0; }
+	.navbar .nav-item a+.dropdown-menu{ margin-top:10px; }
 }
 
 @media (max-width: 992px){
@@ -16,23 +13,15 @@
 	.dropdown-submenu .dropdown-menu .dropdown-item{
 		padding-left: 40px;
 	}
-	.platinum-vid {
-	    position: relative;
-	    margin-top: 0;
-	    overflow: hidden;
-	}
-	.platinum-vid video {
-	     width: unset; 
-	    position: absolute;
-	    height: 80vh;
-	     bottom: unset;
-	    left: 50%;
-	    transform: translateX(-50%);
-	}
 	.navbar{
 		background: #ffffff;
 	}
 	.navbar-light .navbar-nav .nav-link {
 	    color: #000000;
+	}
+	.copyright{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 }

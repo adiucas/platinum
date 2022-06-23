@@ -1,0 +1,49 @@
+/*==============================
+=            banner            =
+==============================*/
+
+.parallax-window{
+	min-height: 400px;
+}
+
+.pcity-main-banner{
+	margin-top: -60px;
+	position: relative;
+}
+
+.pcity-main-banner .title{
+	background: rgb(255 255 255 / 80%);
+	padding: 1px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--red);
+	padding: 30px;
+	border-bottom: 5px solid var(--red);
+}
+
+/*=====  End of banner  ======*/
+
+/*=====================================
+=            special offer            =
+=====================================*/
+
+.so-mobile .carousel{
+	width: 100%;
+}
+
+.so-mobile .carousel-inner{
+	position: relative;
+}
+
+.so-mobile .carousel-overlay{
+	width: 100%;
+	height: 100%;
+	background: var(--red);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/*=====  End of special offer  ======*/
+
