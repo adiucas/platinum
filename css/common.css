@@ -204,6 +204,10 @@ hr{
     border-radius: 5px;
 }
 
+.dropdown-item{
+	transition: 0.3s all;
+}
+
 .dropdown-item:hover {
     color: #ffffff;
     text-decoration: none;
@@ -247,6 +251,10 @@ hr{
 	background: #ffffff;
 }
 
+.nav-link{
+	transition: 0.3s all;
+}
+
 /*=====  End of header  ======*/
 
 
@@ -260,10 +268,19 @@ hr{
 	border-radius: 10px;
 }
 
+.footer{
+	background: #222222;
+}
+
 .foot-logo{
 	display: flex;
-	    align-items: flex-start;
-	    flex-direction: column;
+	align-items: flex-start;
+	flex-direction: column;
+	background: #ffffff;
+	padding: 10px 15px;
+	border-radius: 10px;
+	border: 1px solid var(--red);
+	max-width: 280px;
 }
 
 .foot-logo strong{

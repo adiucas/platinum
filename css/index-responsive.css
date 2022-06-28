@@ -19,6 +19,9 @@
 	.query-wrapper {
 	    bottom: 25%;
 	}
+	.plots .desktop{
+		display: none;
+	}
 }
 
 @media (min-width: 992px){
@@ -27,12 +30,13 @@
 	    flex: 0 0 20%;
 	    max-width: 20%;
 	}
+	.plots .mobile{
+		display: none;
+	}
 }
 
 
 
 @media (max-width: 768px){
-	.plot-img-wrapper img{
-		height: unset;
-	}
+	
 }

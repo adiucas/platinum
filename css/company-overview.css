@@ -1,0 +1,39 @@
+/*==============================
+=            header            =
+==============================*/
+
+.navbar{
+	background: #ffffff;
+	box-shadow: rgb(233 27 35 / 13%) 0px 3px 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--red); !important;
+}
+
+/*=====  End of header  ======*/
+
+/*==============================
+=            banner            =
+==============================*/
+
+.parallax-window{
+	min-height: calc(100vh - 60px);
+}
+
+.pcity-main-banner{
+	position: relative;
+}
+
+.pcity-main-banner .title{
+	background: rgb(255 255 255 / 80%);
+	padding: 1px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--red);
+	padding: 30px;
+	border-bottom: 5px solid var(--red);
+}
+
+/*=====  End of banner  ======*/

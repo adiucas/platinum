@@ -61,7 +61,7 @@
 						About Us
 					</a>
 					<div class="dropdown-menu">
-						<button class="dropdown-item" type="button">Company Overview</button>
+						<a href="company-overview.html"><button class="dropdown-item" type="button">Company Overview</button></a>
 						<button class="dropdown-item" type="button">Mission & Vision</button>
 
 						<div class="dropdown dropright dropdown-submenu">
@@ -145,113 +145,195 @@
 	<!--===========================
 	=            plots            =
 	============================-->
-	<section class="container ptb60 plots">
-		<div class="filter">
-			<button data-name="*" class="btn btn-primary">Show All</button>
-			<button data-name=".3katha" class="btn btn-primary">৩ কাঠা</button>
-			<button data-name=".5katha" class="btn btn-primary">৫ কাঠা</button>
-			<button data-name=".10katha" class="btn btn-primary">১০ কাঠা</button>
+	<section class="container-fluid ptb60 plots">
+		<div class="desktop">
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			    <a class="nav-item nav-link active" id="3katha" data-toggle="tab" href="#tinkatha" role="tab" aria-controls="tinkatha" aria-selected="true">৩ কাঠা</a>
+			    <a class="nav-item nav-link" id="5katha" data-toggle="tab" href="#paskatha" role="tab" aria-controls="paskatha" aria-selected="false">৫ কাঠা</a>
+			    <a class="nav-item nav-link" id="10katha" data-toggle="tab" href="#doshkatha" role="tab" aria-controls="10katha" aria-selected="false">১০ কাঠা</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="tinkatha" role="tabpanel" aria-labelledby="3katha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active">
+			  	        <div class="row">
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/3/ph-prj-01.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/3/ph-prj-02.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/3/ph-prj-03.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/3/ph-prj-04.jpg" class="w-100">
+			  	        	</div>
+			  	        </div>
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	      <div class="row">
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/3/ph-prj-06.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/3/ph-prj-07.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/3/ph-prj-08.jpg" class="w-100">
+			  	      	</div>
+			  	      </div>
+			  	    </div>
+			  	  </div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="paskatha" role="tabpanel" aria-labelledby="5katha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active">
+			  	        <div class="row">
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/about-02.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/about-04.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/c-bg-03.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/f-01.jpg" class="w-100">
+			  	        	</div>
+			  	        </div>
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	      <div class="row">
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/f-02.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/f-06.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/galary-01.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/pl-pr-01.jpg" class="w-100">
+			  	      	</div>
+			  	      </div>
+			  	    </div>
+			  	  </div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="doshkatha" role="tabpanel" aria-labelledby="10katha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active">
+			  	        <div class="row">
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/about-02.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/about-04.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/c-bg-03.jpg" class="w-100">
+			  	        	</div>
+			  	        	<div class="col-lg-3">
+			  	        		<img src="images/plots/5/f-01.jpg" class="w-100">
+			  	        	</div>
+			  	        </div>
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	      <div class="row">
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/f-02.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/f-06.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/galary-01.jpg" class="w-100">
+			  	      	</div>
+			  	      	<div class="col-lg-3">
+			  	      		<img src="images/plots/5/pl-pr-01.jpg" class="w-100">
+			  	      	</div>
+			  	      </div>
+			  	    </div>
+			  	  </div>
+			  	</div>
+			  </div>
+			</div>
 		</div>
-		<div class="grid row mt-4">
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-01.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-02.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-03.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-04.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-05.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-06.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-07.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 3katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-08.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/galary-01.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/c-bg-03.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/about-02.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/f-06.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/f-07.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/about-04.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/f-01.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 5katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/pl-pr-01.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 10katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/ph-prj-09.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 10katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/galary-03.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 10katha col-lg-3 col-md-4 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/f-08.jpg" alt="">
-				</div>
-			</div>
-			<div class="grid-item 10katha col-lg-3 my-2">
-				<div class="plot-img-wrapper">
-					<img src="images/plots/about-01.jpg" alt="">
-				</div>
+		<div class="mobile">
+			<nav>
+			  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+			    <a class="nav-item nav-link active" id="TinKatha" data-toggle="tab" href="#tin-katha" role="tab" aria-controls="tin-katha" aria-selected="true">৩ কাঠা</a>
+			    <a class="nav-item nav-link" id="PasKatha" data-toggle="tab" href="#pas-katha" role="tab" aria-controls="pas-katha" aria-selected="false">৫ কাঠা</a>
+			    <a class="nav-item nav-link" id="DoshKatha" data-toggle="tab" href="#dosh-katha" role="tab" aria-controls="dosh-katha" aria-selected="false">১০ কাঠা</a>
+			  </div>
+			</nav>
+			<div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade show active" id="tin-katha" role="tabpanel" aria-labelledby="TinKatha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active"><img src="images/plots/3/ph-prj-01.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-02.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-03.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-04.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-06.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-07.jpg" class="w-100"></div>
+			  	    <div class="carousel-item"><img src="images/plots/3/ph-prj-08.jpg" class="w-100"></div>
+			  	  </div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="pas-katha" role="tabpanel" aria-labelledby="PasKatha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	  	<div class="carousel-item active"><img src="images/plots/5/about-02.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/about-04.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/c-bg-03.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/f-01.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/f-02.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/f-06.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/galary-01.jpg" class="w-100"></div>
+			  	  	<div class="carousel-item"><img src="images/plots/5/pl-pr-01.jpg" class="w-100"></div>
+			  	  </div>
+			  	</div>
+			  </div>
+			  <div class="tab-pane fade" id="dosh-katha" role="tabpanel" aria-labelledby="DoshKatha">
+			  	<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+			  	  <div class="carousel-inner">
+			  	    <div class="carousel-item active">
+			  	    	<img src="images/plots/5/about-02.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/about-04.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/c-bg-03.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/f-01.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/f-02.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/f-06.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/galary-01.jpg" class="w-100">
+			  	    </div>
+			  	    <div class="carousel-item">
+			  	    	<img src="images/plots/5/pl-pr-01.jpg" class="w-100">
+			  	    </div>
+			  	  </div>
+			  	</div>
+			  </div>
 			</div>
 		</div>
 	</section>
@@ -267,7 +349,16 @@
 					<img src="images/section-titile-line.png" class="sec-title-line" alt="">
 				</div>
 				<div class="row mt-4">
-					<div class="col-lg-4">
+					<div class="col-lg-6">
+						<div class="row">
+							<div class="col-lg-12 mt-4 mt-lg-0">
+								<div class="family-wrapper">
+									<a href="platinum-city.html"><img src="images/platinum%20family/plat-city.jpg" alt=""></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
 						<div class="row">
 							<div class="col-lg-12 mt-4 mt-lg-0">
 								<div class="family-wrapper">
@@ -284,15 +375,6 @@
 									<img src="images/platinum%20family/family-02.jpg" alt="">
 								</div>
 							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 order-first order-lg-0">
-						<div class="row">
-							<div class="col-lg-12 mt-4 mt-lg-0">
-								<div class="family-wrapper">
-									<a href=""><img src="images/platinum%20family/plat-city.jpg" alt=""></a>
-								</div>
-							</div>
 							<div class="col-lg-12 mt-4">
 								<div class="family-wrapper">
 									<img src="images/platinum%20family/family-04.jpg" alt="">
@@ -300,7 +382,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="row">
 							<div class="col-lg-12 mt-4 mt-lg-0">
 								<div class="family-wrapper">
@@ -417,7 +499,7 @@
 	<!--============================
 	=            footer            =
 	=============================-->
-	<section class="container-fluid footer bg-lred" w3-include-html="includes/footer.html">
+	<section class="container-fluid footer" w3-include-html="includes/footer.html">
 	</section>
 
 </body>
