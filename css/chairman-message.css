@@ -1,0 +1,81 @@
+/*==============================
+=            header            =
+==============================*/
+
+.navbar{
+	background: #ffffff;
+	box-shadow: rgb(233 27 35 / 13%) 0px 3px 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--red); !important;
+}
+
+/*=====  End of header  ======*/
+
+/*==========================================
+=            chairman's message            =
+==========================================*/
+
+.cm-wrapper{
+	border: 1px solid var(--red);
+	overflow: hidden;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	background: #ffffff;
+}
+
+.cm-wrapper img{
+	width: 100%;
+	max-width: 300px;
+	padding-top: 30px;
+	margin-left: 30px;
+	border-radius: 45px;
+	border: 1px solid rgb(0 0 0 / 10%);
+}
+
+.cm-wrapper .text{
+	padding: 30px 60px;
+}
+
+.cm-wrapper .text p{
+	text-align: justify;
+}
+
+.cm-wrapper .text h4{
+	color: var(--red);
+}
+
+.cm-wrapper .text h6{
+	color: #606060;
+}
+
+/*=====  End of chairman's message  ======*/
+
+/*===================================
+=            memberships            =
+===================================*/
+
+.mship-wrapper{
+	border: 1px solid var(--red);
+	border-radius: 10px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.mship-wrapper .text{
+	padding-left: 15px;
+}
+
+.mship-wrapper img{
+	max-height: 50px;
+}
+
+.mship-wrapper .text p{
+	font-size: 14px;
+}
+
+/*=====  End of memberships  ======*/
+

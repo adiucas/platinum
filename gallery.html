@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<!-- opengraph -->
+	<!-- <meta property="og:image" content="images/thumbnail.jpg"> -->
+	<title>Gallery | Platinum Group</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-submenu.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/common-responsive.css">
+	<link rel="stylesheet" href="css/gallery.css">
+	<link rel="stylesheet" href="css/gallery-responsive.css">
+	<!-- scripts -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/bootstrap-submenu.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!--============================
+	=            header            =
+	=============================-->
+	<nav class="navbar navbar-light navbar-expand-lg sticky-top">
+		<a class="navbar-brand" html="index.html">
+			<img src="images/logo.png" class="logo" alt="">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Platinum Family
+				  </a>
+				  <div class="dropdown-menu dropmen" aria-labelledby="navbarDropdownMenuLink">
+				    <a class="dropdown-item" href="platinum-city.html">Platinum Holdings - Platinum City</a>
+				    <a class="dropdown-item" href="#">Platinum Prasad Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Food &amp; Beverage Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Chemical Industries Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Tissue &amp; Paper Industries Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Edible Oil Industries Ltd</a>
+				  </div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" tabindex="0" data-toggle="dropdown" data-submenu="">
+						About Us
+					</a>
+					<div class="dropdown-menu">
+						<a href="company-overview.html"><button class="dropdown-item" type="button">Company Overview</button></a>
+						<button class="dropdown-item" type="button">Mission & Vision</button>
+
+						<div class="dropdown dropright dropdown-submenu">
+							<button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">Our Team</button>
+							<div class="dropdown-menu">
+								<button class="dropdown-item" type="button">HR</button>
+								<button class="dropdown-item" type="button">Admin</button>
+								<button class="dropdown-item" type="button">Marketing</button>
+								<button class="dropdown-item" type="button">Accounts</button>
+								<button class="dropdown-item" type="button">Sales</button>
+								<button class="dropdown-item" type="button">Legal</button>
+								<button class="dropdown-item" type="button">CRM</button>
+								<button class="dropdown-item" type="button">Business Development <br> & Company Sale</button>
+							</div>
+						</div>
+
+						<button class="dropdown-item" type="button">Client Service</button>
+						<a href="chairman-message.html"><button class="dropdown-item active" type="button">Chairman Message</button></a>
+						<button class="dropdown-item" type="button">CEO Message</button>
+						<button class="dropdown-item" type="button">Achievement</button>
+					</div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="news.html">News Events</a>
+				</li>
+				<li class="nav-item active">
+				  <a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="career.html">Career</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contact-us.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!--=============================
+	=            gallery            =
+	==============================-->
+	<section class="container ptb60">
+		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+		  <li class="nav-item">
+		    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">
+		    	<i class="fa-solid fa-image"></i>
+		    	<span class="ml-2">Photos</span>
+		    </a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">
+		    	<i class="fa-solid fa-video"></i>
+		    	<span class="ml-2">Videos</span>
+		    </a>
+		  </li>
+		</ul>
+		<div class="tab-content" id="pills-tabContent">
+		  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+		  	<div class="row">
+		  		<div class="col-lg-4 py-3">
+		  			<div class="photoswrapper" data-toggle="modal" data-target="#Ph1">
+		  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504.969 471.031L370.959 337.023C399.084 301.547 416 256.785 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C256.785 416 301.549 399.086 337.021 370.961L471.031 504.969C475.719 509.656 481.859 512 488 512S500.281 509.656 504.969 504.969C514.344 495.594 514.344 480.406 504.969 471.031ZM208 368C119.775 368 48 296.223 48 208S119.775 48 208 48S368 119.777 368 208S296.225 368 208 368ZM288.002 184H231.998V128C231.998 114.738 221.258 104 208 104S184.002 114.738 184.002 128V184H127.998C114.738 184 104 194.742 104 208S114.73 232 127.998 232H184.002V288C184.002 301.258 194.734 312 208 312C221.258 312 231.998 301.262 231.998 288V232H288.002C301.262 232 312 221.258 312 208S301.262 184 288.002 184Z"/></svg>
+		  				<div class="overlay">
+		  				</div>
+		  				<img src="images/plots/10/about-01.jpg" alt="">
+		  			</div>
+		  			<div class="modal fade" id="Ph1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  			  <div class="modal-dialog modal-dialog-centered" role="document">
+		  			    <div class="modal-content">
+		  			      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  			        <span aria-hidden="true">&times;</span>
+		  			      </button>
+		  			      <div class="modal-body">
+		  			        <img src="images/plots/10/about-01.jpg">
+		  			      </div>
+		  			    </div>
+		  			  </div>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 py-3">
+		  			<div class="photoswrapper" data-toggle="modal" data-target="#Ph2">
+		  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504.969 471.031L370.959 337.023C399.084 301.547 416 256.785 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C256.785 416 301.549 399.086 337.021 370.961L471.031 504.969C475.719 509.656 481.859 512 488 512S500.281 509.656 504.969 504.969C514.344 495.594 514.344 480.406 504.969 471.031ZM208 368C119.775 368 48 296.223 48 208S119.775 48 208 48S368 119.777 368 208S296.225 368 208 368ZM288.002 184H231.998V128C231.998 114.738 221.258 104 208 104S184.002 114.738 184.002 128V184H127.998C114.738 184 104 194.742 104 208S114.73 232 127.998 232H184.002V288C184.002 301.258 194.734 312 208 312C221.258 312 231.998 301.262 231.998 288V232H288.002C301.262 232 312 221.258 312 208S301.262 184 288.002 184Z"/></svg>
+		  				<div class="overlay">
+		  				</div>
+		  				<img src="images/plots/10/f-07.jpg" alt="">
+		  			</div>
+		  			<div class="modal fade" id="Ph2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  			  <div class="modal-dialog modal-dialog-centered" role="document">
+		  			    <div class="modal-content">
+		  			      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  			        <span aria-hidden="true">&times;</span>
+		  			      </button>
+		  			      <div class="modal-body">
+		  			        <img src="images/plots/10/f-07.jpg">
+		  			      </div>
+		  			    </div>
+		  			  </div>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 py-3">
+		  			<div class="photoswrapper" data-toggle="modal" data-target="#Ph3">
+		  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504.969 471.031L370.959 337.023C399.084 301.547 416 256.785 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C256.785 416 301.549 399.086 337.021 370.961L471.031 504.969C475.719 509.656 481.859 512 488 512S500.281 509.656 504.969 504.969C514.344 495.594 514.344 480.406 504.969 471.031ZM208 368C119.775 368 48 296.223 48 208S119.775 48 208 48S368 119.777 368 208S296.225 368 208 368ZM288.002 184H231.998V128C231.998 114.738 221.258 104 208 104S184.002 114.738 184.002 128V184H127.998C114.738 184 104 194.742 104 208S114.73 232 127.998 232H184.002V288C184.002 301.258 194.734 312 208 312C221.258 312 231.998 301.262 231.998 288V232H288.002C301.262 232 312 221.258 312 208S301.262 184 288.002 184Z"/></svg>
+		  				<div class="overlay">
+		  				</div>
+		  				<img src="images/plots/10/ph-prj-05.jpg" alt="">
+		  			</div>
+		  			<div class="modal fade" id="Ph3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  			  <div class="modal-dialog modal-dialog-centered" role="document">
+		  			    <div class="modal-content">
+		  			      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  			        <span aria-hidden="true">&times;</span>
+		  			      </button>
+		  			      <div class="modal-body">
+		  			        <img src="images/plots/10/ph-prj-05.jpg">
+		  			      </div>
+		  			    </div>
+		  			  </div>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 py-3">
+		  			<div class="photoswrapper" data-toggle="modal" data-target="#Ph4">
+		  				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504.969 471.031L370.959 337.023C399.084 301.547 416 256.785 416 208C416 93.125 322.875 0 208 0S0 93.125 0 208S93.125 416 208 416C256.785 416 301.549 399.086 337.021 370.961L471.031 504.969C475.719 509.656 481.859 512 488 512S500.281 509.656 504.969 504.969C514.344 495.594 514.344 480.406 504.969 471.031ZM208 368C119.775 368 48 296.223 48 208S119.775 48 208 48S368 119.777 368 208S296.225 368 208 368ZM288.002 184H231.998V128C231.998 114.738 221.258 104 208 104S184.002 114.738 184.002 128V184H127.998C114.738 184 104 194.742 104 208S114.73 232 127.998 232H184.002V288C184.002 301.258 194.734 312 208 312C221.258 312 231.998 301.262 231.998 288V232H288.002C301.262 232 312 221.258 312 208S301.262 184 288.002 184Z"/></svg>
+		  				<div class="overlay">
+		  				</div>
+		  				<img src="images/plots/5/galary-01.jpg" alt="">
+		  			</div>
+		  			<div class="modal fade" id="Ph4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+		  			  <div class="modal-dialog modal-dialog-centered" role="document">
+		  			    <div class="modal-content">
+		  			      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		  			        <span aria-hidden="true">&times;</span>
+		  			      </button>
+		  			      <div class="modal-body">
+		  			        <img src="images/plots/5/galary-01.jpg">
+		  			      </div>
+		  			    </div>
+		  			  </div>
+		  			</div>
+		  		</div>
+		  	</div>
+		  </div>
+		  <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+		  	<div class="row">
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/J72pyxxdmpg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/cJCKdtzwANI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/ChZZUzw55fg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/UWNRAfpCAMI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/OZkarco5JIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  		<div class="col-lg-4 col-md-6 py-3">
+		  			<div class="videowrapper">
+		  				<iframe src="https://www.youtube.com/embed/6OgctyTDHNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		  			</div>
+		  		</div>
+		  	</div>
+		  </div>
+		</div>
+	</section>
+
+	<!--============================
+	=            footer            =
+	=============================-->
+	<section class="container-fluid footer" w3-include-html="includes/footer.html">
+	</section>
+
+</body>
+<!-- scripts -->
+<script>
+	$('[data-submenu]').submenupicker();
+</script>
+<script>
+	includeHTML();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

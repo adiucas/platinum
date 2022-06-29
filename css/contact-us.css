@@ -18,7 +18,7 @@
 ==============================*/
 
 .parallax-window{
-	min-height: calc(100vh - 60px);
+	min-height: 400px;
 }
 
 .pcity-main-banner{
@@ -34,21 +34,20 @@
 	color: var(--red);
 	padding: 30px;
 	border-bottom: 5px solid var(--red);
+	max-width: 700px;
 }
 
-/*=====  End of banner  ======*/
+/*==================================
+=            contact us            =
+==================================*/
 
-/*========================================
-=            company overview            =
-========================================*/
-
-.co-text{
-	background: #ffffff;
-	border: 1px solid var(--red);
-	padding: 15px;
-	border-radius: 10px;
-	text-align: justify;
+.form-control {
+    border: 1px solid var(--red);
 }
 
-/*=====  End of company overview  ======*/
+textarea{
+	max-height: 200px;
+}
+
+/*=====  End of contact us  ======*/
 

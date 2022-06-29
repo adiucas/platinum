@@ -1,0 +1,118 @@
+/*==============================
+=            header            =
+==============================*/
+
+.navbar{
+	background: #ffffff;
+	box-shadow: rgb(233 27 35 / 13%) 0px 3px 3px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--red); !important;
+}
+
+/*=====  End of header  ======*/
+
+/*==============================
+=            banner            =
+==============================*/
+
+.parallax-window{
+	min-height: 400px;
+}
+
+.pcity-main-banner{
+	position: relative;
+}
+
+.pcity-main-banner .title{
+	background: rgb(255 255 255 / 80%);
+	padding: 1px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	color: var(--red);
+	padding: 30px;
+	border-bottom: 5px solid var(--red);
+}
+
+/*=====  End of banner  ======*/
+
+/*===========================
+=            job            =
+===========================*/
+
+.job-wrapper{
+	border: 1px solid var(--red);
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.job-wrapper .title{
+	font-weight: bold;
+	background: var(--red);
+	padding: 10px 15px;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.job-wrapper .details{
+	padding: 15px;
+}
+
+.details .wrapper:not(:last-child){
+	border-bottom: 1px solid rgb(0 0 0 / 10%);
+	padding-bottom: 7.5px;
+}
+
+.details .wrapper:not(:first-child){
+	padding-top: 7.5px;
+}
+
+.details .wrapper .label{
+	font-weight: bold;
+}
+
+.wrapper .desc li{
+	display: flex;
+	margin: 5px 0;
+}
+
+.wrapper .desc li:before{
+	content: '\f621';
+	font-family: var(--faw);
+	color: var(--red);
+	font-weight: bold;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.job-wrapper .footer{
+	font-weight: bold;
+	background: var(--red);
+	padding: 10px 15px;
+	color: #ffffff;
+	font-size: 18px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.btn-job{
+	border: 1px solid #ffffff;
+	background: transparent;
+	color: #ffffff;
+	padding: 10px 15px;
+	border-radius: 5px;
+	font-weight: bold;
+	transition: 0.3s all;
+}
+
+.btn-job:hover{
+	background: #fff;
+	color: var(--red);
+}
+
+/*=====  End of job  ======*/
+
+

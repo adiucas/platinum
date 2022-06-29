@@ -6,7 +6,7 @@
 	<meta name="description" content="">
 	<!-- opengraph -->
 	<!-- <meta property="og:image" content="images/thumbnail.jpg"> -->
-	<title>Company Overview | Platinum Group</title>
+	<title>Contact Us | Platinum Group</title>
 	<link rel="icon" type="image/x-icon" href="images/favicon.png">
 	<!-- fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,12 +18,12 @@
 	<link rel="stylesheet" href="css/bootstrap-submenu.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/common-responsive.css">
-	<link rel="stylesheet" href="css/company-overview.css">
-	<link rel="stylesheet" href="css/company-overview-responsive.css">
+	<link rel="stylesheet" href="css/contact-us.css">
+	<link rel="stylesheet" href="css/contact-us-responsive.css">
 	<!-- scripts -->
 	<script src="js/jquery-3.6.0.min.js"></script>
-	<script src="js/main.js"></script>
 	<script src="js/bootstrap-submenu.min.js"></script>
+	<script src="js/main.js"></script>
 </head>
 <body>
 	<!--============================
@@ -40,7 +40,7 @@
 
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav ml-auto">
-				<li class="nav-item active">
+				<li class="nav-item">
 				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
 				</li>
 				<li class="nav-item dropdown">
@@ -79,7 +79,7 @@
 						</div>
 
 						<button class="dropdown-item" type="button">Client Service</button>
-						<a href="chairman-message.html"><button class="dropdown-item" type="button">Chairman Message</button></a>
+						<a href="chairman-message.html"><button class="dropdown-item active" type="button">Chairman Message</button></a>
 						<button class="dropdown-item" type="button">CEO Message</button>
 						<button class="dropdown-item" type="button">Achievement</button>
 					</div>
@@ -93,7 +93,7 @@
 				<li class="nav-item">
 				  <a class="nav-link" href="career.html">Career</a>
 				</li>
-				<li class="nav-item">
+				<li class="nav-item active">
 				  <a class="nav-link" href="contact-us.html">Contact Us</a>
 				</li>
 			</ul>
@@ -103,42 +103,52 @@
 	<!--============================
 	=            banner            =
 	=============================-->
-	<div class="parallax-window pcity-main-banner" data-parallax="scroll" data-image-src="images/company-overview.jpg">
+	<div class="parallax-window pcity-main-banner" data-parallax="scroll" data-image-src="images/contact-us.jpg">
 		<div class="title">
-			<h1>Company Overview</h1>
+			<h1>Drop Us A Line</h1>
+			<p>For more information about PLATINUM and its projects, please drop us an email and we will get back to you as soon as possible.</p>
 		</div>
 	</div>
-	
-	<!--======================================
-	=            company overview            =
-	=======================================-->
-	<section class="container-fluid ptb60 bg-ow">
-		<div class="row">
-			<div class="container">
-				<div class="co-text">
-					<p>Platinum City was founded on 2011. It is located just beside the Japan Economic Zone. The location of the project is 160 feet adjacent to the Dhaka-Sylhet highway. Platinum City is an area which has the combination of both urbanized and natural beauty. Platinum City there is advanced urban planning concepts at satellite cities in which all of the civic demand drivers are available in every plot. We have 100% uninterrupted land that has ISO certification 9001: 2006.</p><br>
 
-					<p>Our project is located in a completely flood-free area where there is no possibility of water logging. We have 3, 4, 5 and 10 Katha plot area. The project is located 180 feet adjacent to the Dhaka-Sylhet highway. Our Platinum City registered under National Housing Authority (Registration No.0013). We are the member of Real Estate and Housing Association of Bangladesh (Rehab) (a member of the No -078).</p><br>
-
-					<p>It's a luxury residential project by approved skilled architects, environmentalists and urban planners in accordance with government policy. As the Platinum City project is close to Purbachal New Town, a modern suburb designed by RAJUK, all government facilities will be available to the plot holders.</p>
-				</div>
-			</div>
-		</div>
+	<!--================================
+	=            contact us            =
+	=================================-->
+	<section class="container ptb60">
+		<form>
+		  <div class="form-row">
+		    <div class="form-group col-md-6">
+		      <input type="text" class="form-control" placeholder="Name">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <input type="text" class="form-control" placeholder="Phone No.">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <input type="email" class="form-control" id="inputEmail4" placeholder="E-Mail">
+		    </div>
+		    <div class="form-group col-md-6">
+		      <input type="text" class="form-control" placeholder="Subject">
+		    </div>
+		    <div class="form-group col-md-12">
+		    	<textarea class="form-control" rows="5" placeholder="Your Message"></textarea>
+		    </div>
+		  </div>
+		  <div class="text-center"><button type="submit" class="btn btn-primary">Send Message</button></div>
+		</form>
 	</section>
 
 	<!--============================
 	=            footer            =
 	=============================-->
-	<section class="container-fluid footer bg-lred" w3-include-html="includes/footer.html">
+	<section class="container-fluid footer" w3-include-html="includes/footer.html">
 	</section>
 
 </body>
 <!-- scripts -->
 <script>
-	includeHTML();
+	$('[data-submenu]').submenupicker();
 </script>
 <script>
-	$('[data-submenu]').submenupicker();
+	includeHTML();
 </script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>

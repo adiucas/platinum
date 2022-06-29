@@ -1,0 +1,9 @@
+@media (max-width: 768px){
+	.job-wrapper .footer{
+		flex-direction: column;
+		justify-content: center;
+	}
+	.btn-job{
+		margin-top: 15px;
+	}
+}

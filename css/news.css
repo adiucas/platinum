@@ -13,12 +13,13 @@
 
 /*=====  End of header  ======*/
 
+
 /*==============================
 =            banner            =
 ==============================*/
 
 .parallax-window{
-	min-height: calc(100vh - 60px);
+	min-height: 400px;
 }
 
 .pcity-main-banner{
@@ -38,17 +39,42 @@
 
 /*=====  End of banner  ======*/
 
-/*========================================
-=            company overview            =
-========================================*/
+/*============================
+=            news            =
+============================*/
 
-.co-text{
-	background: #ffffff;
+.news-wrapper{
 	border: 1px solid var(--red);
-	padding: 15px;
 	border-radius: 10px;
+	overflow: hidden;
+}
+
+.news-wrapper img{
+	width: 100%;
+}
+
+.news-wrapper h6{
+	color: var(--red);
+	margin-bottom: 15px;
+}
+
+.news-wrapper a{
+	color: var(--red);
+	font-size: 14px;
+	margin-top: 15px;
+	display: block;
+}
+
+.news-wrapper p{
 	text-align: justify;
 }
 
-/*=====  End of company overview  ======*/
+.news-wrapper .text{
+	padding: 15px;
+}
 
+.news-wrapper:not(:first-child){
+	margin-top: 30px;
+}
+
+/*=====  End of news  ======*/
