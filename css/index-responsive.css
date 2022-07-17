@@ -36,7 +36,14 @@
 }
 
 
+@media (max-width: 576px){
+	.review-wrapper{
+		width: 300px;
+	}
+}
 
 @media (max-width: 768px){
-	
+	.review-wrapper{
+		width: 500px;
+	}
 }

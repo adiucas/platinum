@@ -96,6 +96,15 @@
 .plots .tab-content .col-lg-3{
 	display: flex;
 }
+
+.plots .nav-tabs .nav-link {
+    border: 1px solid #00000040;
+    border-bottom: none;
+}
+
+.plots .nav-link:not(:last-child){
+	margin-right: 15px;
+}
 /*=====  End of plots  ======*/
 
 /*=======================================
@@ -177,4 +186,28 @@
 }
 
 /*=====  End of milestones  ======*/
+
+/*=======================================
+=            customer review            =
+=======================================*/
+
+.review-wrapper{
+	border: 1px solid var(--red);
+	padding: 15px;
+	border-radius: 10px;
+	transition: 0.5s all;
+	max-width: 700px;
+}
+
+.owl-item.active.center .review-wrapper{
+	background: var(--red);
+	color: #ffffff;
+}
+
+.owl-item.active.center .review-wrapper .blockquote-footer{
+	color: #ffffffbf;
+}
+
+/*=====  End of customer review  ======*/
+
 

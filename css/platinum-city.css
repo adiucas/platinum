@@ -130,6 +130,7 @@
 	position: relative;
 	transition: 0.3s all;
 	cursor: pointer;
+	margin: 0 auto;
 }
 
 .pg-pic-wrapper:after{
@@ -198,6 +199,11 @@
 	color: #fff;
 	 text-shadow: unset; 
 	opacity: .8;
+}
+
+
+.active.carousel-item-left, .carousel-item-prev:not(.carousel-item-right){
+	transform: translateX(-33%);
 }
 
 /*=====  End of project gallery  ======*/
