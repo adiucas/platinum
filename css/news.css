@@ -2,14 +2,14 @@
 =            header            =
 ==============================*/
 
-.navbar{
+/*.navbar{
 	background: #ffffff;
 	box-shadow: rgb(233 27 35 / 13%) 0px 3px 3px;
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: var(--red); !important;
-}
+}*/
 
 /*=====  End of header  ======*/
 
@@ -23,6 +23,7 @@
 }
 
 .pcity-main-banner{
+	margin-top: -60px;
 	position: relative;
 }
 

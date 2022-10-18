@@ -16,8 +16,6 @@
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 	<link rel="stylesheet" href="css/bootstrap-submenu.css">
-	<link rel="stylesheet" href="css/owl-caro/owl.carousel.min.css">
-	<link rel="stylesheet" href="css/owl-caro/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/common.css">
 	<link rel="stylesheet" href="css/common-responsive.css">
 	<link rel="stylesheet" href="css/index.css">
@@ -28,6 +26,21 @@
 	<script src="js/main.js"></script>
 </head>
 <body>
+	<!--===============================
+	=            go to top            =
+	================================-->
+	<div class="go-to-top" onclick="scrollToTop()">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M381.6 236.3C376.6 248.2 364.9 256 352 256h-96v192c0 17.67-14.33 32-32 32h-64c-17.67 0-32-14.33-32-32V256H32c-12.94 0-24.61-7.797-29.56-19.75C-2.516 224.3 .2188 210.5 9.375 201.4l159.1-160C175.6 35.13 183.8 32 192 32s16.38 3.125 22.62 9.375l160 160C383.8 210.5 386.5 224.3 381.6 236.3z"/></svg>
+	</div>
+
+	<!--===============================
+	=            live chat            =
+	================================-->
+	<a href="https://www.facebook.com/platinumgroupbangladesh/" target="_blank">
+		<div class="live-chat">
+			<i class="fa-brands fa-facebook-messenger"></i>
+		</div>
+	</a>
 	<!--============================
 	=            header            =
 	=============================-->
@@ -56,6 +69,7 @@
 				    <a class="dropdown-item" href="#">Platinum Chemical Industries Ltd</a>
 				    <a class="dropdown-item" href="#">Platinum Tissue &amp; Paper Industries Ltd</a>
 				    <a class="dropdown-item" href="#">Platinum Edible Oil Industries Ltd</a>
+				    <a class="dropdown-item" href="pbc.html">Platinum Business Consortium </a>
 				  </div>
 				</li>
 				<li class="nav-item dropdown">
@@ -67,7 +81,7 @@
 						<button class="dropdown-item" type="button">Mission & Vision</button>
 
 						<div class="dropdown dropright dropdown-submenu">
-							<button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">Our Team</button>
+							<button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">Senior Management Team</button>
 							<div class="dropdown-menu">
 								<button class="dropdown-item" type="button">HR</button>
 								<button class="dropdown-item" type="button">Admin</button>
@@ -79,10 +93,8 @@
 								<button class="dropdown-item" type="button">Business Development <br> & Company Sale</button>
 							</div>
 						</div>
-
-						<button class="dropdown-item" type="button">Client Service</button>
 						<a href="chairman-message.html"><button class="dropdown-item" type="button">Chairman Message</button></a>
-						<button class="dropdown-item" type="button">CEO Message</button>
+						<a href="ceo-message.html"><button class="dropdown-item" type="button">CEO Message</button></a>
 						<button class="dropdown-item" type="button">Achievement</button>
 					</div>
 				</li>
@@ -105,7 +117,7 @@
 	<!--============================
 	=            banner            =
 	=============================-->
-	<section class="platinum-vid">
+	<section id="top" class="platinum-vid">
 		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 			<source src="images/platinum-city.mp4" type="video/mp4">
 		</video>
@@ -455,74 +467,52 @@
 			<h3 class="sec-title">Customer Review</h3>
 			<img src="images/section-titile-line.png" class="sec-title-line">
 		</div>
-		<div class="owl-carousel">
-			<div class="review-wrapper">
-				<blockquote class="blockquote">
-				  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-				  <footer class="blockquote-footer"><cite>Mr. Adi</cite></footer>
-				</blockquote>
-			</div>
-			<div class="review-wrapper">
-				<blockquote class="blockquote">
-				  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Temporibus sint possimus earum molestias magnam dignissimos vel non ratione, quas eius, facilis delectus a, ea fuga odit recusandae quidem aperiam praesentium?</p>
-				  <footer class="blockquote-footer"><cite>Mr. Shahadat</cite></footer>
-				</blockquote>
-			</div>
-			<div class="review-wrapper">
-				<blockquote class="blockquote">
-				  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-				  <footer class="blockquote-footer"><cite>Mr. Wahid</cite></footer>
-				</blockquote>
+		<div class="col-lg-10 offset-lg-1 col-12">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			  <ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			  	<div class="carousel-item active">
+			  		<div class="review-wrapper">
+			  			<div class="user-avatar">
+			  				<img src="images/avatar.jpg" alt="">
+			  			</div>
+			  			<blockquote class="blockquote">
+			  				<p class="mb-0 text addReadMore showlesscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Temporibus sint possimus earum molestias magnam dignissimos vel non ratione, quas eius, facilis delectus a, ea fuga odit recusandae quidem aperiam praesentium?</p>
+			  				<footer class="blockquote-footer"><cite>Mr. Shahadat</cite></footer>
+			  			</blockquote>
+			  		</div>
+			  	</div>
+			  	<div class="carousel-item">
+			  		<div class="review-wrapper">
+			  			<div class="user-avatar">
+			  				<img src="images/avatar.jpg" alt="">
+			  			</div>
+			  			<blockquote class="blockquote">
+			  				<p class="mb-0 text addReadMore showlesscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Temporibus sint possimus earum molestias magnam dignissimos vel non ratione, quas eius, facilis delectus a, ea fuga odit recusandae quidem aperiam praesentium? Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim id nemo excepturi animi rerum quam tempore iusto debitis minima nihil eligendi perspiciatis porro dicta laudantium, deserunt recusandae natus doloremque possimus. </p>
+			  				<footer class="blockquote-footer"><cite>Mr. Shahadat</cite></footer>
+			  			</blockquote>
+			  		</div>
+			  	</div>
+			  	<div class="carousel-item">
+			  		<div class="review-wrapper">
+			  			<div class="user-avatar">
+			  				<img src="images/avatar.jpg" alt="">
+			  			</div>
+			  			<blockquote class="blockquote">
+			  				<p class="mb-0 text addReadMore showlesscontent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante. Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Temporibus sint possimus earum molestias magnam dignissimos vel non ratione, quas eius, facilis delectus a, ea fuga odit recusandae quidem aperiam praesentium?</p>
+			  				<footer class="blockquote-footer"><cite>Mr. Shahadat</cite></footer>
+			  			</blockquote>
+			  		</div>
+			  	</div>
+			    </div>
+			  </div>
 			</div>
 		</div>
 	</section>
-
-	<!--================================
-	=            milestones            =
-	=================================-->
-	<!-- <section class="container-fluid ptb60 bg-red">
-		<div class="row">
-			<div class="container">
-				<div class="row milestones">
-					<div class="col-lg-2 col-md-4">
-						<div class="mil-wrapper">
-							<i class="fa-solid fa-building"></i>
-							<h1 class="mt-1">1</h1>
-							<p>PROJECT</p>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 mt-4 mt-lg-0 mt-md-0">
-						<div class="mil-wrapper">
-							<i class="fa-solid fa-chart-pie"></i>
-							<h1 class="mt-1">6250</h1>
-							<p>TOTAL PLOTS</p>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 mt-4 mt-lg-0 mt-md-0">
-						<div class="mil-wrapper">
-							<i class="fa-solid fa-clipboard-check"></i>
-							<h1 class="mt-1">2310</h1>
-							<p>ALREADY SOLD.</p>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 offset-md-2 offset-lg-0 mt-md-4 mt-4 mt-lg-0">
-						<div class="mil-wrapper">
-							<i class="fa-solid fa-magnifying-glass"></i>
-							<h1 class="mt-1">3542</h1>
-							<p>AVAILABLE</p>
-						</div>
-					</div>
-					<div class="col-lg-2 col-md-4 mt-md-4 mt-4 mt-lg-0">
-						<div class="mil-wrapper">
-							<i class="fa-solid fa-user-plus"></i>
-							<h1 class="mt-1">5581</h1>
-							<p>REGISTRATION</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
 	<!--============================
 	=            footer            =
@@ -541,7 +531,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
+<script src="js/readmore.min.js"></script>
 <script src="js/index.js"></script>
 </html>

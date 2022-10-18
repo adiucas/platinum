@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<!-- opengraph -->
+	<!-- <meta property="og:image" content="images/thumbnail.jpg"> -->
+	<title>Platinum Group</title>
+	<link rel="icon" type="image/x-icon" href="images/favicon.png">
+	<!-- fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<!-- css -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+	<link rel="stylesheet" href="css/bootstrap-submenu.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/common-responsive.css">
+	<link rel="stylesheet" href="css/coming-soon.css">
+	<!-- scripts -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<!--============================
+	=            header            =
+	=============================-->
+	<nav class="navbar navbar-light navbar-expand-lg sticky-top">
+		<a class="navbar-brand" href="index.html">
+			<img src="images/logo.png" class="logo" alt="">
+		</a>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				    Platinum Family
+				  </a>
+				  <div class="dropdown-menu dropmen" aria-labelledby="navbarDropdownMenuLink">
+				    <a class="dropdown-item" href="platinum-city.html">Platinum Holdings - Platinum City</a>
+				    <a class="dropdown-item" href="#">Platinum Prasad Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Food &amp; Beverage Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Chemical Industries Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Tissue &amp; Paper Industries Ltd</a>
+				    <a class="dropdown-item" href="#">Platinum Edible Oil Industries Ltd</a>
+				  </div>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" tabindex="0" data-toggle="dropdown" data-submenu="">
+						About Us
+					</a>
+					<div class="dropdown-menu">
+						<a href="company-overview.html"><button class="dropdown-item" type="button">Company Overview</button></a>
+						<button class="dropdown-item" type="button">Mission & Vision</button>
+
+						<div class="dropdown dropright dropdown-submenu">
+							<button class="dropdown-item dropdown-toggle" type="button" data-toggle="dropdown">Senior Management Team</button>
+							<div class="dropdown-menu">
+								<button class="dropdown-item" type="button">HR</button>
+								<button class="dropdown-item" type="button">Admin</button>
+								<button class="dropdown-item" type="button">Marketing</button>
+								<button class="dropdown-item" type="button">Accounts</button>
+								<button class="dropdown-item" type="button">Sales</button>
+								<button class="dropdown-item" type="button">Legal</button>
+								<button class="dropdown-item" type="button">CRM</button>
+								<button class="dropdown-item" type="button">Business Development <br> & Company Sale</button>
+							</div>
+						</div>
+						<a href="chairman-message.html"><button class="dropdown-item" type="button">Chairman Message</button></a>
+						<a href="ceo-message.html"><button class="dropdown-item" type="button">CEO Message</button></a>
+						<button class="dropdown-item" type="button">Achievement</button>
+					</div>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="news.html">News Events</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="gallery.html">Gallery</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="career.html">Career</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="contact-us.html">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<div class="coming-soon">
+		<div class="wrapper">
+			<h1>coming soon</h1>
+		</div>
+		<div class="text-center mt-4"><a href="index.html"><button class="btn btn-primary">Go to Home</button></a></div>
+	</div>
+
+	<!--============================
+	=            footer            =
+	=============================-->
+	<section class="container-fluid footer" w3-include-html="includes/footer.html">
+	</section>
+</body>
+<!-- scripts -->
+<script>
+	includeHTML();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/js/all.min.js" crossorigin="anonymous"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$(window).scroll(function(){
+			var scroll = $(window).scrollTop();
+			if (scroll > 60) {
+				$(".navbar").addClass("bg-nav")
+				$(".navbar").css("box-shadow" , "0 3px 3px #e91b2321");
+				$(".navbar-light .navbar-nav .nav-link").addClass("sticky-nav-link");
+				$(".navbar-light .navbar-nav .active>.nav-link").removeClass("sticky-nav-link");
+			}
+			else{
+				$(".navbar").removeClass("bg-nav")
+				$(".navbar-light .navbar-nav .nav-link").removeClass("sticky-nav-link");
+				$(".navbar").css("box-shadow" , "unset");
+			}
+		})
+	})
+</script>
+</html>

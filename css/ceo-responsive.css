@@ -1,0 +1,23 @@
+@media (max-width: 992px){
+	.cm-wrapper{
+		flex-direction: column;
+		align-items: center;
+		padding: 15px;
+	}
+	.cm-wrapper img{
+		margin-left: 0;
+		margin-top: 30px;
+	}
+	.cm-wrapper .text{
+		padding: unset;
+		text-align-last: center;
+	}
+	.cm-wrapper .text h4{
+		text-align: center;
+		margin-top: 15px;
+	}
+
+	.cm-wrapper .text h6{
+		text-align: center;
+	}
+}

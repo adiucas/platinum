@@ -1,18 +1,5 @@
 $('.first-option').hide();
 
-var $grid = $('.grid').isotope({
-  // options
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows'
-});
-
-$('.filter button').on("click", function(){
-	var value = $(this).attr('data-name');
-	$grid.isotope({
-		filter:value
-	});
-})
-
 $(document).ready(function(){
   $(window).scroll(function(){
     var scroll = $(window).scrollTop();
@@ -30,14 +17,7 @@ $(document).ready(function(){
   })
 })
 
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    responsiveClass:true,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    autoplayHoverPause:true,
-    dots: false,
-    margin: 15,
-    center: true,
-    autoWidth:true
-})
+$('article').readmore({
+  collapsedHeight:10,
+  heightMargin: 16
+});

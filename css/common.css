@@ -39,10 +39,15 @@
 	padding: 0;
 }
 
+html{
+	scroll-behavior: smooth;
+}
+
 body{
 	overflow-x: hidden;
 	font-family: var(--para);
 	position: relative;
+	scroll-behavior: smooth;
 }
 
 a, a:hover, a:focus {
@@ -200,6 +205,54 @@ hr{
 	    border-radius: 10px;
 }
 
+.go-to-top{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border: 1px solid var(--red);
+	z-index: 999;
+	right: 30px;
+	bottom: 30px;
+	border-radius: 50px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.3s all;
+}
+
+.live-chat{
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	background: #ffffff;
+	border: 1px solid var(--red);
+	color: var(--blue);
+	z-index: 999;
+	left: 30px;
+	bottom: 30px;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 0.7;
+	cursor: pointer;
+	transition: 0.3s all;
+}
+
+.go-to-top:hover, .live-chat:hover{
+	opacity: 1;
+}
+
+.go-to-top svg{
+	width: 15px;
+	fill: var(--red);
+}
+
+
+
 /*=====  End of universal css  ======*/
 
 /*==============================
@@ -322,7 +375,7 @@ hr{
 	border-radius: 10px;
 	border: 1px solid var(--red);
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 }
 
 .address-icon-wrapper{
@@ -403,6 +456,54 @@ hr{
 	transform: scale(1.25);
 }
 
+.social-icon-wrapper.insta{
+	border: 1px solid #CF2776;
+	color: #CF2776;
+	transition: 0.3s all;
+}
+
+.social-icon-wrapper.insta:hover{
+	background: #CF2776;
+	color: #ffffff;
+	transform: scale(1.25);
+}
+
+.social-icon-wrapper.lin{
+	border: 1px solid #0678B6;
+	color: #0678B6;
+	transition: 0.3s all;
+}
+
+.social-icon-wrapper.lin:hover{
+	background: #0678B6;
+	color: #ffffff;
+	transform: scale(1.25);
+}
+
+.social-icon-wrapper.pin{
+	border: 1px solid #E70121;
+	color: #E70121;
+	transition: 0.3s all;
+}
+
+.social-icon-wrapper.pin:hover{
+	background: #E70121;
+	color: #ffffff;
+	transform: scale(1.25);
+}
+
+.social-icon-wrapper.whatsapp{
+	border: 1px solid #21D443;
+	color: #21D443;
+	transition: 0.3s all;
+}
+
+.social-icon-wrapper.whatsapp:hover{
+	background: #21D443;
+	color: #ffffff;
+	transform: scale(1.25);
+}
+
 .copyright{
 	display: flex;
 	justify-content: space-between;
@@ -413,4 +514,6 @@ hr{
 
 /*=====  End of footer  ======*/
 
-
+.sec-title{
+	text-transform: capitalize;
+}

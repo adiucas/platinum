@@ -1,0 +1,30 @@
+.navbar-light .navbar-nav .nav-link {
+     color: var(--red); 
+}
+
+.coming-soon{
+	background: url('../images/coming-soon.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+
+.coming-soon .wrapper{
+	background: var(--red);
+	color: #ffffff;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.coming-soon button{
+	background: #ffffff;
+	font-weight: bold;
+}

@@ -196,16 +196,44 @@
 	padding: 15px;
 	border-radius: 10px;
 	transition: 0.5s all;
-	max-width: 700px;
+	width: 100%;
+	display: flex;
 }
 
-.owl-item.active.center .review-wrapper{
-	background: var(--red);
-	color: #ffffff;
+.review-wrapper .user-avatar{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	border: 1px solid var(--red);
+	flex-shrink: 0;
+	overflow: hidden;
+	margin-right: 15px;
 }
 
-.owl-item.active.center .review-wrapper .blockquote-footer{
-	color: #ffffffbf;
+.review-wrapper .user-avatar img{
+	width: 100%;
+}
+
+.addReadMore.showlesscontent .SecSec,
+.addReadMore.showlesscontent .readLess {
+    display: none;
+}
+
+.addReadMore.showmorecontent .readMore {
+    display: none;
+}
+
+.addReadMore .readMore,
+.addReadMore .readLess {
+    font-weight: bold;
+    margin-left: 2px;
+    color: var(--red);
+    cursor: pointer;
+}
+
+.addReadMoreWrapTxt.showmorecontent .SecSec,
+.addReadMoreWrapTxt.showmorecontent .readLess {
+    display: block;
 }
 
 /*=====  End of customer review  ======*/
